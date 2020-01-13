@@ -30,7 +30,8 @@ searchUserGitHub = () => {
       <div className="Search">
         <header className="Search-header">
           <h1>Github Search</h1>
-          <input
+          <input className="Input-css" 
+          placeholder="Enter with your github username"
             onChange={(e) => {
               this.setState({ 
                 user: e.target.value 

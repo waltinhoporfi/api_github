@@ -60,7 +60,8 @@ class Index extends Component {
                 <div className="UserInfo-header">
                 <div className="Nav-bar">
                 <h1>Github Search</h1>
-                    <input
+                    <input className="Input-css" 
+                    placeholder="Enter with your github username"
                         onChange={(e) => {
                         this.setState({ 
                             user: e.target.value 
