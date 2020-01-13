@@ -1,0 +1,64 @@
+.UserInfo {
+    text-align: center;
+  }
+  
+  .UserInfo-header {
+    background-color: #242435;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    font-size: calc(5px + 1vmin);
+    color: white;
+  }
+  
+  .Nav-bar {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  .Nav-bar h1 {
+    margin-right: 20px;
+  }
+  
+  .UserInfo-msg-err {
+    font-size: 9px;
+    color: red;
+  }
+
+  .Container {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: 1fr 3fr;
+  }
+
+  .UserDetail {
+    background-color: #2e2f45;
+    margin-left: 25px;
+    padding: 10px;
+  }
+
+  .ImgStyle {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  .ColunaUserInfoRepos {
+    display: flex;
+  }
+
+  .Repo {
+    margin-left: 25px;
+    background-color: #2e2f45;
+    width: 45%;
+    height: fit-content;
+  }
+
+  .RepoContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
