@@ -87,8 +87,8 @@ class Index extends Component {
                             <img className="ImgStyle" src={ this.props.user.avatar_url } alt="User image" />
                             <p>@{ this.props.user.login }</p>
                             <p>{ this.props.user.location }</p>
-                            <p>{ this.props.user.public_repos }</p>
-                            <p>{ this.props.user.followers }</p>
+                            <p>Repositories: { this.props.user.public_repos }</p>
+                            <p>Seguidores: { this.props.user.followers }</p>
                         </div>
                     ) : null
                  }
