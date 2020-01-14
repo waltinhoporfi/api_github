@@ -52,7 +52,7 @@ class Index extends Component {
   }
 
     render() {
-        console.log("This.props.user: ",this.props.repos);
+        console.log("This.props.repos: ",this.props.repos);
         console.log("This.props.user: ", this.props.user);  
         console.log("This.error: ", this.error);  
         return (
@@ -61,7 +61,7 @@ class Index extends Component {
                 <div className="Nav-bar">
                 <h1>Github Search</h1>
                     <input className="Input-css" 
-                    placeholder="Enter with your github username"
+                    placeholder={this.props.user.login}
                         onChange={(e) => {
                         this.setState({ 
                             user: e.target.value 
@@ -88,7 +88,7 @@ class Index extends Component {
                             <img className="ImgStyle" src={ this.props.user.avatar_url } alt="User image" />
                             <p>@{ this.props.user.login }</p>
                             <p>{ this.props.user.location }</p>
-                            <p>Repositories: { this.props.user.public_repos }</p>
+                            <p>Repositórios: { this.props.user.public_repos }</p>
                             <p>Seguidores: { this.props.user.followers }</p>
                         </div>
                     ) : null
